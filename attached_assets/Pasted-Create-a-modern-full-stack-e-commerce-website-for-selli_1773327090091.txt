@@ -1,0 +1,421 @@
+Create a modern full-stack e-commerce website for selling plants in Tunisia.
+The website must support Arabic and French, display prices in Tunisian Dinar (TND), and target customers in Tunisia.
+
+The business is based in:
+
+Khniss, Monastir 5011, Tunisia
+
+The design inspiration should follow the clean, modern, plant-focused aesthetic of:
+
+PLNTS.com
+
+The UI should feel green, natural, minimal, and elegant, with lots of white space, plant imagery, soft green palettes, and rounded UI elements.
+
+Technical Stack
+
+Use a modern scalable architecture.
+
+Frontend
+
+Next.js (React)
+
+TailwindCSS
+
+TypeScript
+
+i18n localization (Arabic / French)
+
+Responsive design
+
+SEO optimized
+
+Backend
+
+Node.js + Express or Next.js API routes
+
+Database
+
+PostgreSQL
+
+Auth
+
+JWT authentication
+
+bcrypt password hashing
+
+Admin Dashboard
+
+protected admin routes
+
+charts and analytics
+
+Deployment
+
+compatible with Replit hosting
+
+Language System (Localization)
+
+The website must support two languages only:
+
+Arabic (العربية)
+
+French (Français)
+
+Requirements:
+
+Language switcher in the header
+
+RTL support when Arabic is selected
+
+All UI text must be translatable
+
+URLs should adapt to language:
+
+Example:
+
+/fr/products
+/ar/products
+Currency
+
+All prices must display in:
+
+Tunisian Dinar (TND)
+
+Example:
+
+35 TND
+120 TND
+Website Pages (Routing Structure)
+
+Each page must include a real layout and content presentation.
+
+Public Pages
+
+Home
+
+/
+
+Sections:
+
+Hero section with plants
+
+Featured products
+
+Categories
+
+Benefits (delivery, quality plants)
+
+Newsletter
+
+Testimonials
+
+Shop
+
+/shop
+
+Features:
+
+product grid
+
+filters (price, category)
+
+search
+
+pagination
+
+Product Page
+
+/product/[slug]
+
+Content:
+
+plant image gallery
+
+description
+
+price
+
+stock
+
+add to cart
+
+related products
+
+Categories
+
+/categories
+/categories/[slug]
+
+Cart
+
+/cart
+
+Checkout
+
+/checkout
+
+Fields:
+
+name
+
+phone
+
+address
+
+city
+
+payment method
+
+About
+
+/about
+
+Presentation of the plant shop, location, mission.
+
+Contact
+
+/contact
+
+Includes:
+
+phone
+
+email
+
+map
+
+address
+
+Address:
+
+Khniss, Monastir 5011, Tunisia
+
+Authentication
+
+/login
+/register
+/account
+
+Users can:
+
+create account
+
+view orders
+
+manage address
+
+404 Page
+
+Create a beautiful custom 404 page with plant illustration:
+
+/404
+
+Message example:
+
+Oops! This page doesn't exist.
+Let's get you back to the garden.
+Admin Dashboard
+
+Create a secure admin dashboard.
+
+Route:
+
+/admin
+
+Admin features:
+
+Dashboard
+
+Stats:
+
+total sales
+
+total orders
+
+revenue
+
+low stock alerts
+
+latest orders
+
+Use charts.
+
+Product Management
+
+Admin can:
+
+create product
+
+edit product
+
+delete product
+
+upload images
+
+manage categories
+
+manage stock
+
+Orders
+
+Admin can:
+
+view orders
+
+change order status
+
+see customer info
+
+print invoice
+
+Statuses:
+
+Pending
+
+Processing
+
+Shipped
+
+Delivered
+
+Inventory
+
+Admin can monitor:
+
+stock level
+
+low inventory warnings
+
+Customers
+
+List customers and order history.
+
+Facturation (Invoices)
+
+Generate invoice for each order including:
+
+order ID
+
+products
+
+quantities
+
+price
+
+total in TND
+
+Design System
+
+Color palette inspired by plant stores.
+
+Primary colors:
+
+#2F6F4E
+#4CAF50
+#E8F5E9
+#F6FFF8
+
+Design guidelines:
+
+soft shadows
+
+rounded cards
+
+large plant images
+
+minimal UI
+
+airy spacing
+
+Components
+
+Reusable components:
+
+Header
+Footer
+Language Switcher
+Product Card
+Category Card
+Cart Drawer
+Search Bar
+Filters Sidebar
+Admin Sidebar
+Charts Dashboard
+
+SEO Requirements
+
+dynamic metadata
+
+sitemap
+
+fast loading
+
+optimized images
+
+Additional Features
+
+Wishlist system
+
+Product reviews
+
+Newsletter subscription
+
+Delivery information for Tunisia
+
+Database Models
+
+Users
+
+id
+name
+email
+password
+role
+created_at
+
+Products
+
+id
+name
+description
+price
+currency (TND)
+stock
+category_id
+images
+created_at
+
+Categories
+
+id
+name
+slug
+
+Orders
+
+id
+user_id
+status
+total
+created_at
+
+OrderItems
+
+id
+order_id
+product_id
+quantity
+price
+UX Goals
+
+The site must feel:
+
+modern
+
+natural
+
+premium
+
+simple to navigate
+
+Inspired by plant lifestyle brands.

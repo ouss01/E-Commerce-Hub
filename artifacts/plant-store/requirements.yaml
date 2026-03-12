@@ -1,0 +1,24 @@
+packages:
+  "framer-motion": "For elegant, smooth page transitions and micro-interactions"
+  "recharts": "For the admin dashboard revenue and order status charts"
+  "date-fns": "For formatting order dates and reviews"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility to merge tailwind classes without style conflicts"
+
+images:
+  - path: "artifacts/plant-store/public/images/logo.png"
+    description: "Minimalist elegant line art logo of a single monstera leaf, solid deep forest green color on a transparent background, suitable for a premium plant store"
+    aspect_ratio: "1:1"
+  - path: "artifacts/plant-store/public/images/hero.png"
+    description: "A bright, airy, modern living room with large windows, featuring a variety of beautiful, healthy lush green indoor potted plants, soft morning light, highly aesthetic architectural digest style"
+    aspect_ratio: "16:9"
+  - path: "artifacts/plant-store/public/images/not-found.png"
+    description: "A cute, soft aesthetic watercolor illustration of an empty spilled terracotta plant pot with some loose soil, muted green and earth tones on transparent background"
+    aspect_ratio: "1:1"
+  - path: "artifacts/plant-store/public/images/pattern.png"
+    description: "Very subtle, elegant, pale green abstract botanical leaf pattern, seamless texture for a website background, high key, low contrast"
+    aspect_ratio: "16:9"
+
+notes:
+  - Auth token should be intercepted by the customFetch implementation to include `Authorization: Bearer <token>` from localStorage.
+  - The UI relies on existing shadcn-like UI components in `src/components/ui/` as listed in the directory structure.
