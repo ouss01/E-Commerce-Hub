@@ -26,6 +26,9 @@ import Wishlist from "./pages/Wishlist";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/not-found";
+import ForgotPassword from "./pages/ForgotPassword";
+import ResetPassword from "./pages/ResetPassword";
+import AuthCallback from "./pages/AuthCallback";
 
 import Dashboard from "./pages/admin/Dashboard";
 import AdminProducts from "./pages/admin/Products";
@@ -111,7 +114,16 @@ function Router() {
       <Route path="/contact">
         <PublicLayout><Contact /></PublicLayout>
       </Route>
-      
+      <Route path="/forgot-password">
+        <PublicLayout><ForgotPassword /></PublicLayout>
+      </Route>
+      <Route path="/reset-password">
+        <PublicLayout><ResetPassword /></PublicLayout>
+      </Route>
+      <Route path="/auth/callback">
+        <PublicLayout><AuthCallback /></PublicLayout>
+      </Route>
+
       <Route>
         <PublicLayout><NotFound /></PublicLayout>
       </Route>
