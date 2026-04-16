@@ -34,6 +34,7 @@ import Dashboard from "./pages/admin/Dashboard";
 import AdminProducts from "./pages/admin/Products";
 import AdminOrders from "./pages/admin/Orders";
 import AdminCustomers from "./pages/admin/Customers";
+import AdminCategories from "./pages/admin/Categories";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -72,6 +73,9 @@ function Router() {
       </Route>
       <Route path="/admin/customers">
         <AdminLayout><AdminCustomers /></AdminLayout>
+      </Route>
+      <Route path="/admin/categories">
+        <AdminLayout><AdminCategories /></AdminLayout>
       </Route>
       
       {/* Public routes */}

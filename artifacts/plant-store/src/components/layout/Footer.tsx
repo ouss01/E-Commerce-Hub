@@ -15,8 +15,8 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Verdure Logo" className="w-8 h-8" />
-              <span className="font-serif text-2xl font-bold text-primary tracking-tight">Verdure</span>
+              <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Florista Logo" className="w-8 h-8" />
+              <span className="font-serif text-2xl font-bold text-primary tracking-tight">Florista</span>
             </Link>
             <p className="text-muted-foreground leading-relaxed">
               {t('home.hero.subtitle')}
@@ -56,7 +56,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <Mail size={20} className="text-primary shrink-0" />
-                <span>hello@verdure.tn</span>
+                <span>hello@florista.tn</span>
               </li>
             </ul>
           </div>
@@ -82,7 +82,7 @@ export function Footer() {
         </div>
         
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Verdure Plants. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Florista Plants. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>

@@ -54,6 +54,35 @@ router.post("/", requireAdmin, async (req, res) => {
   }
 });
 
+router.patch("/:slug", requireAdmin, async (req, res) => {
+  try {
+    const { name, nameFr, nameAr, description, image } = req.body;
+    const updates: any = {};
+    if (name !== undefined) updates.name = name;
+    if (nameFr !== undefined) { updates.nameFr = nameFr; if (!name) updates.name = nameFr; }
+    if (nameAr !== undefined) updates.nameAr = nameAr;
+    if (description !== undefined) updates.description = description;
+    if (image !== undefined) updates.image = image;
+
+    const [cat] = await db.update(categoriesTable).set(updates).where(eq(categoriesTable.slug, req.params.slug)).returning();
+    if (!cat) { res.status(404).json({ error: "Category not found" }); return; }
+    res.json({ ...cat, productCount: 0 });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
+router.delete("/:slug", requireAdmin, async (req, res) => {
+  try {
+    await db.delete(categoriesTable).where(eq(categoriesTable.slug, req.params.slug));
+    res.json({ success: true });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
 router.get("/:slug", async (req, res) => {
   try {
     const rows = await db

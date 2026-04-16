@@ -54,7 +54,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-1">Email</h3>
-                <p className="text-muted-foreground">contact@verdure.tn</p>
+                <p className="text-muted-foreground">contact@florista.tn</p>
               </div>
             </div>
             
@@ -72,7 +72,7 @@ export default function Contact() {
               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80')] bg-cover bg-center opacity-40 mix-blend-overlay"></div>
               <div className="bg-background/90 backdrop-blur p-4 rounded-xl shadow-lg relative z-10 flex items-center gap-3">
                 <MapPin className="text-primary" />
-                <span className="font-semibold">Verdure, Khniss, Monastir</span>
+                <span className="font-semibold">Florista, Khniss, Monastir</span>
               </div>
             </div>
           </div>

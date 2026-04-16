@@ -10,6 +10,7 @@ import reviews from "./reviews.js";
 import newsletter from "./newsletter.js";
 import admin from "./admin.js";
 import payment from "./payment.js";
+import upload from "./upload.js";
 
 const router: IRouter = Router();
 
@@ -24,5 +25,6 @@ router.use("/reviews", reviews);
 router.use("/newsletter", newsletter);
 router.use("/admin", admin);
 router.use("/payment", payment);
+router.use("/upload", upload);
 
 export default router;
